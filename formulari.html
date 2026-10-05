@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ADES — Define Your Reality</title>
+
+    <link rel="stylesheet" href="formulario.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- FONDO DECORATIVO -->
+    <div class="noise"></div>
+
+    <header class="navbar">
+
+        <div class="logo">
+            ADES<span>®</span>
+        </div>
+
+        <div class="nav-info">
+            <span>EST. 2026</span>
+            <span>LIMA / PERÚ</span>
+        </div>
+
+        <div class="menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </header>
+
+
+    <main class="hero">
+
+        <!-- INFORMACIÓN DE LA MARCA -->
+        <section class="intro">
+
+            <div class="eyebrow">
+                <span></span>
+                JOIN THE MOVEMENT
+            </div>
+
+            <h1>
+                DEFINE
+                <strong>YOUR<br>REALITY.</strong>
+            </h1>
+
+            <p class="intro-text">
+                ADES nace para quienes no siguen tendencias,
+                sino que crean su propio camino.
+                Una nueva visión del streetwear urbano.
+            </p>
+
+            <div class="tags">
+                <span>STREETWEAR</span>
+                <span>URBAN CULTURE</span>
+                <span>NO LIMITS</span>
+            </div>
+
+            <div class="edition">
+                <div class="line"></div>
+                <span>ADES / VOL. 01 — 2026</span>
+            </div>
+
+        </section>
+
+
+        <!-- FORMULARIO -->
+        <section class="form-card">
+
+            <div class="card-top">
+
+                <div>
+                    <span class="small-title">ADES COMMUNITY</span>
+                    <h2>ÚNETE.</h2>
+                </div>
+
+                <div class="number">
+                    01<br>
+                    <span>/ 04</span>
+                </div>
+
+            </div>
+
+            <p class="form-description">
+                Regístrate para recibir lanzamientos exclusivos,
+                descuentos y acceso anticipado a nuestros próximos drops.
+            </p>
+
+
+            <form id="adesForm">
+
+                <div class="form-row">
+
+                    <div class="input-box">
+                        <label for="nombre">NOMBRE</label>
+
+                        <input
+                            type="text"
+                            id="nombre"
+                            placeholder="Tu nombre"
+                            required
+                        >
+                    </div>
+
+                    <div class="input-box">
+                        <label for="apellido">APELLIDO</label>
+
+                        <input
+                            type="text"
+                            id="apellido"
+                            placeholder="Tu apellido"
+                            required
+                        >
+                    </div>
+
+                </div>
+
+
+                <div class="input-box">
+
+                    <label for="email">EMAIL</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="correo@ejemplo.com"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="input-box">
+
+                    <label for="ciudad">CIUDAD</label>
+
+                    <select id="ciudad">
+
+                        <option value="">Selecciona tu ciudad</option>
+                        <option>Lima</option>
+                        <option>Arequipa</option>
+                        <option>Trujillo</option>
+                        <option>Cusco</option>
+                        <option>Otra ciudad</option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="input-box">
+
+                    <label>¿QUÉ ESTILO TE REPRESENTA?</label>
+
+                    <div class="style-options">
+
+                        <label class="choice">
+                            <input type="radio" name="estilo" value="streetwear">
+                            <span>STREETWEAR</span>
+                        </label>
+
+                        <label class="choice">
+                            <input type="radio" name="estilo" value="oversize">
+                            <span>OVERSIZE</span>
+                        </label>
+
+                        <label class="choice">
+                            <input type="radio" name="estilo" value="urban">
+                            <span>URBAN</span>
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <label class="check">
+
+                    <input type="checkbox" required>
+
+                    <span>
+                        Acepto recibir novedades y lanzamientos de ADES.
+                    </span>
+
+                </label>
+
+
+                <button type="submit">
+
+                    <span>QUIERO SER PARTE</span>
+
+                    <b>↗</b>
+
+                </button>
+
+            </form>
+
+
+            <div class="form-footer">
+
+                <span>ADES® — LIMA / PERÚ</span>
+
+                <span>DEFINE YOUR REALITY.</span>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- BARRA INFERIOR -->
+
+    <footer>
+
+        <div class="moving-text">
+
+            <span>STREETWEAR</span>
+            <i>✦</i>
+
+            <span>URBAN CULTURE</span>
+            <i>✦</i>
+
+            <span>NO LIMITS</span>
+            <i>✦</i>
+
+            <span>STREETWEAR</span>
+            <i>✦</i>
+
+            <span>URBAN CULTURE</span>
+
+        </div>
+
+    </footer>
+
+
+    <div class="success" id="success">
+
+        <div class="success-box">
+
+            <span>ADES®</span>
+
+            <h3>BIENVENIDO.</h3>
+
+            <p>
+                Ya eres parte del movimiento.
+                Prepárate para lo que viene.
+            </p>
+
+            <button onclick="cerrarMensaje()">CONTINUAR</button>
+
+        </div>
+
+    </div>
+
+
+    <script>
+
+        const formulario = document.getElementById("adesForm");
+        const mensaje = document.getElementById("success");
+
+        formulario.addEventListener("submit", function(event) {
+
+            event.preventDefault();
+
+            mensaje.classList.add("active");
+
+            formulario.reset();
+
+        });
+
+
+        function cerrarMensaje() {
+
+            mensaje.classList.remove("active");
+
+        }
+
+    </script>
+
+</body>
+</html>
